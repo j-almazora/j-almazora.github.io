@@ -1,0 +1,32 @@
+#menu {
+    position: fixed;
+    top: 50px;
+    left: -110px;
+    width: 100px;
+    padding: 5px;
+    background-color: darkorange;
+    transition: 1.5s;
+    
+}
+
+#makeBg, #reset, #hideApp, #showApp {
+    width: 100%;
+}
+
+#bgNum {
+    width: 95%;
+}
+
+#openButton {
+    position: absolute;
+    width: 50px;
+    right: -50px;
+    top: 0px;
+}
+
+#closeButton {
+    position: absolute;
+    width: 50px;
+    right: -50px;
+    bottom: 0px;
+}
