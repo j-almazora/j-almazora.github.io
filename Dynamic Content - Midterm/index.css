@@ -1,0 +1,151 @@
+/*CONTROLS*/
+
+#start {
+background-color: red;
+}
+
+#stop {
+    background-color: red;
+}
+
+
+/*DISPLAY*/
+
+#display {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: auto;
+    z-index: -1;
+     -webkit-transition: background 3.5s ease-in-out;
+    -moz-transition:background 3.5s ease-in-out;
+    -ms-transition:background 3.5s ease-in-out;
+    background-color: #106088;
+}
+
+#textBubble {
+    height: 15vh;
+    width: 35vw;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    margin: auto auto;
+    border-radius: 20px;
+    border: 4px dotted #437F2D;
+    background-color: #E24033;
+    text-align: center;
+    font-family: 'helvetica';
+    overflow: scroll;
+    opacity: 0;
+    -webkit-transition: opacity 0.5s ease;
+    -moz-transition: opacity 0.5s ease;
+    -ms-transition: opacity 0.5s ease;
+}
+
+#greeting {
+    font-size: 1rem;
+    text-align: center;
+    color: #22281B;
+}
+
+.snows {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 0%;
+}
+
+
+/*HOVER*/
+
+#sun_2_:hover, #cloud1_1_, #cloud2_1_, #cloud3_1_, #cloud4_1_, #cloud5, #cloud6, #santa, #rudolf, #xTree, button, #snowman, #moon_1_, #gifts, #bgGraphics, #textBubble, #hat_1_, #opening, #coke {
+    cursor: pointer;
+}
+
+/*CLOUDS ANIMATION*/
+
+@keyframes moveCloud1 {
+0%    { transform: translate(10px, 15px); }
+  
+  50%   { transform: translate(0px, 18px); }
+  
+  
+  100%  { transform: translate(10px, 25px); }
+}
+
+@keyframes moveCloud2 {
+0%    { transform: translate(12px, 15px); }
+  
+  50%   { transform: translate(5px, 17px); }
+  
+  
+  100%  { transform: translate(11px, 25px); }
+}
+
+/*CLOUDS END*/
+
+/*DAY AND NIGHT*/
+
+@keyframes dOpacity {
+    0%    { opacity: 0; }
+    50%    { opacity: 0; }
+  
+  100%  { opacity: 1; }
+}
+
+#sun_2_ {
+    transform: translate(150px, 15px);
+    -webkit-transition: transform 3s ease-in-out;
+    -moz-transition:transform 3s ease-in-out;
+    -ms-transition:transform 3s ease-in-out;
+}
+
+
+#moon_1_ {
+    transform: translate(0px, -400px);
+    -webkit-transition: transform 3s ease-in-out;
+    -moz-transition:transform 3s ease-in-out;
+    -ms-transition:transform 3s ease-in-out; 
+}
+
+#cityLights {
+    display: none;
+}
+
+/*SNOWMAN ANIMATION*/
+
+
+#snowman {
+    opacity: 1;
+     -webkit-transition: opacity 2s ease;
+    -moz-transition:opacity 2s ease;
+    -ms-transition:opacity 2s ease;
+}
+
+#hat_1_ {
+    -webkit-transition: transform 1s ease;
+    -moz-transition:transform 1s ease;
+    -ms-transition:transform 1s ease;
+}
+
+#coke {
+    transform: translate(0px, 0px);
+    -webkit-transition: transform 2s ease;
+    -moz-transition: transform 2s ease;
+    -ms-transition: transform 2s ease;
+}
+
+#opening {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+#decor {
+    opacity: 0;
+}
