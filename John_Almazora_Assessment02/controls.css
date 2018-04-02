@@ -1,0 +1,26 @@
+input {
+    width: 60px;
+}
+
+#randomButton {
+    background-color: #db7385;
+}
+
+#numberButton {
+    background-color: #000;
+    color: #FFF;
+}
+
+/*CREATING DIV*/
+
+.newDiv {
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    margin: 5px;
+}
+
+.newImg {
+    display: block;
+    margin: auto;
+}
