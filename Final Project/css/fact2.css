@@ -1,10 +1,12 @@
-@font-face {
-    font-family: Caviar Dreams;
-    src: url('../fonts/CaviarDreams.ttf');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+    font-family: 'Open sans', 'Helvetica';
+    font-weight: 200;
 }
 
 #factDisplay {
-    height: 35vh;
+    height: 280px;
     width: 340px;
     position: absolute;
     top: 0;
@@ -36,13 +38,14 @@ h3 {
 }
 
 #fortuneInput {
-    width: 15vw;
-    height: 3vh;
+    width: 230px;
+    height: 30px;
     position: absolute;
     left: 0;
     bottom: 15px;
     right: 0;
     margin: auto;
+    border-radius: 10px;
 }
 
 #answerContainer {
