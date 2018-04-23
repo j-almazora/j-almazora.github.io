@@ -1,0 +1,25 @@
+#factDisplay {
+    height: 100px;
+    width: 340px;
+    position: relative;
+    top: -150px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+#shit {
+    display: none;
+}
+
+#brain {
+    display: none;
+}
+
+h2 {
+    font-family: 'Open Sans';
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding: 0px 10px;
+}

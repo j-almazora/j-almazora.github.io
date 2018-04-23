@@ -1,0 +1,21 @@
+#factDisplay {
+    height: 15vh;
+    width: 340px;
+    position: absolute;
+    top: 45%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+#shit {
+    display: none;
+}
+
+h2 {
+    font-size: 1.1rem;
+    padding: 0px 15px;
+    font-weight: 400;
+    font-family: 'Open Sans';
+}

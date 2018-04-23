@@ -1,0 +1,155 @@
+@font-face {
+    font-family: "Caviar Dreams";
+    src: url("../fonts/CaviarDreams.ttf") format("ttf"),
+    url("/fonts/CaviarDreamsBold.ttf") format("ttf");
+}
+
+body {
+    background: url(../imgs/bg.svg) center;
+    background-color: #BDEFBD;
+    background-size: 30%;
+    width: 340px;
+    height: auto;
+    margin: auto;
+    margin-top: 80px;
+}
+
+/*GLOBAL CSS*/
+
+#header {
+    height: 17vh;
+    width: 100vw;
+    background-color: #f7f76d;
+    margin-top: 1vh;
+    text-align: center;
+}
+
+/*ICONS*/
+
+#fact_icon {
+    height: 10vh;
+    width: auto;
+    position: relative;
+    top: 30px;
+}
+
+/*LOGO ANIMATION*/
+
+#lottie {
+/*
+    background: url(imgs/bg.svg) center;
+    background-color: #BDEFBD;
+    background-size: 30%;
+*/
+    width: 100%;
+    height: 100%;
+    display: block;
+    overflow: hidden;
+    transform: translate(0, -20%);
+    text-align: center;
+    position: absolute;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+
+@keyframes flyAround {
+    25% {
+        transform: translate(10px, 30px);
+    }
+    50% {
+        transform: translate(30px, 35px);
+    }
+    75% {
+        transform: translate(25px, 10px);
+    }
+    100% {
+        transform: translate(10px, 20px);
+    }
+}
+
+#fly_1 {
+    animation: flyAround 5s infinite alternate;
+    height: auto;
+    width: 8vw;
+    position: absolute;
+    top: 200px;
+    left: 100px;
+}
+
+
+
+/*LANDING PAGE BUTTON*/
+
+button {
+    width: 70vw;
+    height: 8vh;
+    text-align: center;
+    background: #FFFB78;
+    font-family: "Caviar DreamsBold";
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #eae346;
+}
+
+#gasUp {
+    position: fixed;
+    top: 20%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    border-radius: 45px;
+}
+
+#digestibles {
+    position: fixed;
+    top: 40%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    border-radius: 45px;
+}
+
+#startQuiz {
+    position: fixed;
+    top: 60%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    border-radius: 45px;
+}
+
+
+/*JOKES*/
+
+#jokesDiv {
+    height: 40vh;
+    width: 80vw;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    border-radius: 70px;
+    background-color: teal;
+    text-align: center;
+    display: none;
+    padding: 12.5vh 2vw;
+}
+
+p {
+    word-wrap: break-word;
+}
+
+
