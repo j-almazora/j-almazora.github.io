@@ -1,28 +1,92 @@
+var instruction = document.getElementById("instruction"),
+    cancelDiv = document.getElementById("cancelDiv");
+
+function playAudio(){
+    var audio = document.getElementsByTagName("audio")[0];
+     audio.play();
+};
+
+cancelDiv.addEventListener("click", function () {
+    this.style.display = "none";
+    instruction.style.display = "none";
+    playAudio();
+});
+
+
+
 // Array of all the questions and choices to populate the questions. This might be saved in some JSON file or a database and we would have to read the data in.
 var all_questions = [{
-    question_string: "What color is a healthy poop?",
-    choices: {
-        correct: "All shades of Brown",
-        wrong: ["Greasy Yellow", "Black", "Bright Red"]
-    }
+        question_string: "What color is a healthy poop?",
+        choices: {
+            correct: "All shades of Brown",
+            wrong: ["Greasy Yellow", "Black", "Bright Red"]
+        }
 }, {
-    question_string: "Which type of bean is most commonly consumed?",
-    choices: {
-        correct: "Kidney Beans",
-        wrong: ["Green Beans", "Pinto Beans", "Mr. Bean"]
-    }
+        question_string: "Which type of bean is most commonly consumed?",
+        choices: {
+            correct: "Kidney Beans",
+            wrong: ["Green Beans", "Pinto Beans", "Mr. Bean"]
+        }
 }, {
-    question_string: "How is Edamame prepared?",
-    choices: {
-        correct: "Boiling",
-        wrong: ["Praying", "Frying", "Throw it to someone"]
-    }
+        question_string: "How is Edamame prepared?",
+        choices: {
+            correct: "Boiling",
+            wrong: ["Praying", "Frying", "Throw it to someone"]
+        }
 }, {
-    question_string: 'If you want to poop more, eating ___ foods will help',
-    choices: {
-        correct: "Fibre-rich",
-        wrong: ["Protein packed", "Fatty", "Glycemic"]
-    }
+        question_string: 'If you want to poop more, eating ___ foods will help',
+        choices: {
+            correct: "Fibre-rich",
+            wrong: ["Protein packed", "Fatty", "Glycemic"]
+        }
+},
+    {
+        question_string: "Which of the following is a TRUE benefit of eating blueberries?",
+        choices: {
+            correct: "Alleviate Inflammation",
+            wrong: ["High Glycemic Index", "Lowers the count of bad Bacteria", "Aids with muscle development"]
+        }
+
+        },
+    {
+        question_string: "Which is a type of good bacteria that can be found in yogurt",
+        choices: {
+            correct: "Lactobacillus",
+            wrong: ["Spirochaetes", "Proteobacteria", "Chlamydiae"]
+        }
+        
+        },
+    {
+        question_string: "Which is a type of whole grain foods",
+        choices: {
+            correct: "Brown Rice",
+            wrong: ["White Bread", "Instant Noodles", "Corn"]
+        }
+        
+        },
+    {
+        question_string: "Eating whole grain foods can give you a sustained insulin throughout the day, and can lower the risk of _____",
+        choices: {
+            correct: "Type 2 Diabeties",
+            wrong: ["Lupus", "Salmonella poisoning.", "E. coli. poisoning"]
+        }
+        
+        },
+    {
+        question_string: "Eating lean meat is good for you because?",
+        choices: {
+            correct: "High protein and low calories",
+            wrong: ["High in Carbohydrate", "High in good cholesterol", "Low sugar content"]
+        }
+        
+        },
+    {
+        question_string: "Bananas are known to be rich in _____",
+        choices: {
+            correct: "Potassium & Fiber",
+            wrong: ["Good cholesterol", "Protein", "Vitamin R"]
+        }
+        
 }];
 
 // An object for a Quiz, which will contain Question objects.

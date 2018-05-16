@@ -12,6 +12,35 @@ body {
     top: 140px;
 }
 
+#instruction {
+    border-radius: 10px;
+    height: 30vh;
+    width: 300px;
+    position: absolute;
+    top: 30%;
+    right: 0;
+    left: 0;
+    margin: auto;
+    background-color: #BDEFBD;
+    font-size: 1rem;
+    font-family: 'Open Sans';
+    padding: 10px;
+    overflow: auto;
+}
+
+#cancelDiv {
+    background-color: #757575;
+    opacity: 0.7;
+    height: 600px;
+    width: 340px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
 #quiz h1 {
   display: none;
 }
@@ -20,6 +49,19 @@ body {
 #quiz button:hover {
   background: #36a39c;
   color: #FFF;
+}
+
+#submit-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: -60%;
+    left: 0;
+    margin: auto;
+    height: 40px;
+    width: 120px;
+    background: #FFFB78;
+    border-radius: 20px;
 }
 
 #submit-button:disabled {

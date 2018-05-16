@@ -204,12 +204,12 @@ a:active {
 
 #display {
     bottom:0;
+    font-size: 12px;
     font-family: 'Open Sans', sans-serif;
     margin: auto 5px;
     left: 0;
     right: 0;
     border: 2px solid #cbffc7;
     border-radius: 10px;
-    overflow: auto;
     display: none;
 }

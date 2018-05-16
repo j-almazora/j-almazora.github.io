@@ -19,8 +19,18 @@ body {
     margin-top: 80px;
 }
 
+#listButton2, #listMenu1, #poopProcessUL, #poopTypeUL, #poopColorUL {
+    display: none;
+}
+
+#blueberry, #yogurt, #wholeGrain, #meat, #poultry, #banana {
+    display: none;
+}
+
 #nextButton,
-#next-question-button {
+#next-question-button,
+#listButton,
+#listButton2 {
     animation: icon 1.5s infinite;
 }
 
@@ -42,8 +52,18 @@ body {
 #liver:hover,
 #stomach:hover,
 #largeIntestine:hover,
-#smallIntestine:hover
-{
+#smallIntestine:hover,
+#listButton:hover,
+#listButton2:hover,
+#blueberryIcon:hover,
+#yogurtIcon:hover,
+#wholeGrainIcon:hover,
+#meatIcon:hover,
+#eggIcon:hover,
+#bananaIcon:hover,
+#submit-button:hover,
+#next-question-button:hover,
+#prev-question-button:hover {
     opacity: 0.7;
     cursor: pointer;
 }
@@ -51,7 +71,6 @@ body {
 
 
 /* Hover state animation applied here */
-
 
 #digestibles:hover,
 #gasUp:hover,

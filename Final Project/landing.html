@@ -3,32 +3,12 @@
 <meta charset="UTF-8">
 
 <head>
-   <title>Home | Poosh-It!</title>
+    <title>Home | Poosh-It!</title>
     <link rel="stylesheet" href="css/landing.css" type="text/css">
-    <link rel="stylesheet" href="css/ham.css" type="text/css">
     <link rel="stylesheet" href="css/button_animation.css">
 </head>
 
 <body>
-    <div id="menu">
-        <label>
-  <input type='checkbox'>
-  <span class='menu'>
-    <span class='hamburger'></span>
-  </span>
-  <ul>
-    <li>
-      <a href='#'>Home</a>
-    </li>
-    <li>
-      <a href='#'>About Us</a>
-    </li>
-    <li>
-      <a href='#'>Settings</a>
-    </li>
-  </ul>
-</label>
-    </div>
     <div id="lottie">
         <div id="flyDisplay">
             <img src="./imgs/fly.svg" alt="fly" id="fly_1">
@@ -41,12 +21,20 @@
             <a href="quiz.html"><button id="startQuiz">START QUIZ</button></a>
         </div>
     </div>
+    <div id="cancelDiv"></div>
+    <div id="instruction">
+        <p><span id="welcome">Welcome to Poosh-it!</span></p>
+        <p>Click on "Gas Me Up" and get filled with jokes.</p>
+        <p>or Click on "Digestibles" to start learning about Digestive System</p>
+        <p>After learning the "Digestibles", you may test your knowledge by taking the quiz.</p>
+    </div>
+
 
 
 
     <script src="js/landing.js" type="text/javascript"></script>
     <script src="js/landing_animation.js" type="text/javascript"></script>
-
+    <audio src="sounds/bubble.mp3"></audio>
 
 </body>
 
